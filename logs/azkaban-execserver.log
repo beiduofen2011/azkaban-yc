@@ -1,0 +1,346 @@
+2021/08/23 11:47:12.071 +0800  INFO [AzkabanExecutorServer] [main] [Azkaban] Starting Jetty Azkaban Executor...
+2021/08/23 11:47:12.227 +0800  INFO [AzkabanServer] [main] [Azkaban] Loading azkaban settings file from D:\code\azkaban-master\azkaban-exec-server\src\main\resources\conf
+2021/08/23 11:47:12.229 +0800  INFO [AzkabanServer] [main] [Azkaban] Loading azkaban properties file
+2021/08/23 11:47:13.488 +0800  INFO [DispatchMethod] [main] [Azkaban] Value of dispatch method is : PUSH
+2021/08/23 11:47:14.635 +0800  WARN [ClusterLoader] [main] [Azkaban] cluster does not exist. No clusters are loaded.
+2021/08/23 11:47:15.010 +0800  WARN [StorageCleaner] [main] [Azkaban] Project cleanup disabled. All artifacts will be stored.
+2021/08/23 11:47:15.423 +0800  INFO [AzkabanCommonModule] [main] [Azkaban] Event reporter is not enabled
+2021/08/23 11:47:15.425 +0800  INFO [FlowRunnerManager] [main] [Azkaban] useNewThreadPool: false
+2021/08/23 11:47:15.431 +0800  INFO [JobTypeManager] [main] [Azkaban] Loading plugin default job types
+2021/08/23 11:47:15.438 +0800  INFO [FlowRunnerManager] [main] [Azkaban] Configuring Project Cache
+2021/08/23 11:47:15.444 +0800  INFO [FlowRunnerManager] [main] [Azkaban] Property azkaban.project_cache_size_percentage_of_disk not set. Project Cache directory will not be auto-cleaned as it gets full
+2021/08/23 11:47:15.446 +0800  INFO [DispatchMethod] [main] [Azkaban] Value of dispatch method is : PUSH
+2021/08/23 11:47:15.446 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 11:47:15.446 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 11:47:15.500 +0800  INFO [ExecJettyServerModule] [main] [Azkaban] Added SocketConnector as Ssl is disabled
+2021/08/23 11:47:15.506 +0800  INFO [ExecJettyServerModule] [main] [Azkaban] Setting up connector with stats on: true
+2021/08/23 11:47:15.506 +0800  INFO [ExecJettyServerModule] [main] [Azkaban] Jetty connector name: 0.0.0.0:0, default header buffer size: 10485760
+2021/08/23 11:47:15.507 +0800  INFO [ExecJettyServerModule] [main] [Azkaban] Jetty connector name: 0.0.0.0:0, (if) new header buffer size: 4096
+2021/08/23 11:47:15.701 +0800  INFO [JmxJobMBeanManager] [main] [Azkaban] Initializing azkaban.execapp.jmx.JmxJobMBeanManager
+2021/08/23 11:47:15.702 +0800  INFO [AzkabanExecutorServer] [main] [Azkaban] Job callback enabled? true
+2021/08/23 11:47:15.707 +0800  INFO [JobCallbackManager] [main] [Azkaban] Initializing
+2021/08/23 11:47:15.724 +0800  INFO [JobCallbackRequestMaker] [main] [Azkaban] responseWaitTimeoutMS: 5000
+2021/08/23 11:47:15.730 +0800  INFO [JobCallbackRequestMaker] [main] [Azkaban] Global request configuration [expectContinueEnabled=false, proxy=null, localAddress=null, cookieSpec=null, redirectsEnabled=true, relativeRedirectsAllowed=true, maxRedirects=50, circularRedirectsAllowed=false, authenticationEnabled=true, targetPreferredAuthSchemes=null, proxyPreferredAuthSchemes=null, connectionRequestTimeout=3000, connectTimeout=3000, socketTimeout=3000, contentCompressionEnabled=true]
+2021/08/23 11:47:16.748 +0800  INFO [JobCallbackRequestMaker] [main] [Azkaban] Jobcall thread pool size: 10
+2021/08/23 11:47:16.756 +0800  INFO [JobCallbackRequestMaker] [main] [Azkaban] Initialization for azkaban.execapp.event.JobCallbackRequestMaker is completed
+2021/08/23 11:47:16.763 +0800  INFO [JobCallbackManager] [main] [Azkaban] Initialization completed azkaban.execapp.event.JobCallbackManager
+2021/08/23 11:47:16.763 +0800  INFO [JobCallbackManager] [main] [Azkaban] azkabanHostName localhost:8081
+2021/08/23 11:47:16.763 +0800  INFO [AzkabanExecutorServer] [main] [Azkaban] Registering MBeans...
+2021/08/23 11:47:16.799 +0800  INFO [MBeanRegistrationManager] [main] [Azkaban] Bean azkaban.jmx.JmxJettyServer registered.
+2021/08/23 11:47:16.800 +0800  INFO [MBeanRegistrationManager] [main] [Azkaban] Bean azkaban.execapp.jmx.JmxFlowRunnerManager registered.
+2021/08/23 11:47:16.801 +0800  INFO [MBeanRegistrationManager] [main] [Azkaban] Bean azkaban.execapp.jmx.JmxFlowRampManager registered.
+2021/08/23 11:47:16.802 +0800  INFO [MBeanRegistrationManager] [main] [Azkaban] Bean azkaban.execapp.jmx.JmxJobMBeanManager registered.
+2021/08/23 11:47:16.802 +0800  INFO [MBeanRegistrationManager] [main] [Azkaban] Bean azkaban.execapp.jmx.JmxJobCallback registered.
+2021/08/23 11:47:16.803 +0800  INFO [AzkabanExecutorServer] [main] [Azkaban] No value for property: jmx.attribute.processor.class was found
+2021/08/23 11:47:16.803 +0800  INFO [AzkabanExecutorServer] [main] [Azkaban] executor.port wasn't set - free port will be picked automatically. Executor is started with active=false and must be activated separately.
+2021/08/23 11:47:17.899 +0800  INFO [AzkabanExecutorServer] [main] [Azkaban] This executor wasn't found in the DB. Adding self.
+2021/08/23 11:47:17.912 +0800  INFO [AzkabanExecutorServer] [main] [Azkaban] Started Executor Server on KYE-1000850096.ky-tech.com.cn:57192
+2021/08/23 11:47:18.001 +0800  INFO [AzkabanExecutorServer] [main] [Azkaban] Setting timezone to Asia/Shanghai
+2021/08/23 11:48:15.460 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 11:49:15.472 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 11:49:15.472 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 11:50:15.472 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 11:51:03.505 +0800  WARN [ExecutorServlet] [200184509@qtp-1528834618-2] [Azkaban] Setting ACTIVE flag to true
+2021/08/23 11:51:15.478 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 11:51:15.478 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 11:52:15.483 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 11:53:15.491 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 11:53:15.492 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 11:54:15.499 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 11:55:15.506 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 11:55:15.506 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 11:56:15.509 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 11:57:15.516 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 11:57:15.516 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 11:58:15.523 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 11:59:15.533 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 11:59:15.534 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 12:00:15.545 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 12:01:15.552 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 12:01:15.552 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 12:02:15.565 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 12:03:15.570 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 12:03:15.570 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 12:04:15.584 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:02:56.992 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:02:56.992 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:03:56.993 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:04:57.000 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:04:57.000 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:05:57.012 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:06:57.016 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:06:57.016 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:07:57.018 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:08:57.032 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:08:57.032 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:09:57.045 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:10:57.050 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:10:57.050 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:11:57.057 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:12:57.061 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:12:57.061 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:13:57.076 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:14:57.088 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:14:57.088 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:15:57.103 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:16:57.119 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:16:57.119 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:17:57.131 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:18:57.143 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:18:57.143 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:19:57.035 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:20:56.557 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:21:56.560 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:21:56.560 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:22:56.572 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:23:56.583 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:23:56.583 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:24:56.587 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:25:56.599 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:25:56.599 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:26:56.602 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:27:56.603 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:27:56.603 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:28:56.603 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:29:56.611 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:29:56.611 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:30:56.616 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:31:56.621 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:31:56.621 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:32:56.622 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:33:56.636 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:33:56.637 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:34:56.644 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:35:56.655 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:35:56.655 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:36:56.661 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:37:56.667 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:37:56.667 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:38:56.667 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:39:56.670 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:39:56.670 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:40:56.674 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:41:56.684 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:41:56.684 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:42:56.696 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:43:56.705 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:43:56.705 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:44:56.712 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:45:56.718 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:45:56.718 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:46:56.732 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:47:56.732 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:47:56.732 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:48:56.737 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:49:56.749 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:49:56.749 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:50:56.754 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:51:56.768 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:51:56.768 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:52:56.781 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:53:56.795 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:53:56.795 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:54:56.784 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:55:56.778 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:56:56.782 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:56:56.783 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:57:56.792 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:58:56.804 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 14:58:56.805 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 14:59:56.810 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:00:56.814 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:00:56.814 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:01:56.821 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:02:56.825 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:02:56.826 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:03:56.835 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:04:56.845 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:04:56.845 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:05:56.849 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:06:56.857 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:06:56.857 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:07:56.861 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:08:56.873 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:08:56.873 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:09:56.874 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:10:56.887 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:10:56.887 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:11:56.889 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:12:56.894 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:12:56.894 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:13:56.905 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:14:56.918 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:14:56.918 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:15:56.919 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:16:56.926 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:16:56.926 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:17:56.931 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:18:56.935 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:18:56.935 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:19:56.947 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:20:56.960 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:20:56.960 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:21:56.961 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:22:56.963 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:22:56.963 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:23:56.971 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:24:56.985 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:24:56.985 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:25:56.993 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:26:56.994 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:26:56.994 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:27:57.003 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:28:57.008 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:28:57.008 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:29:57.005 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:30:57.013 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:30:57.013 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:31:57.021 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:32:57.031 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:32:57.032 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:33:57.041 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:34:57.041 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:34:57.041 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:35:57.045 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:36:57.059 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:36:57.059 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:37:57.061 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:38:57.071 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:38:57.071 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:39:57.078 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:40:57.088 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:40:57.088 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:41:57.089 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:42:57.089 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:42:57.089 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:43:57.098 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:44:57.104 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:44:57.104 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:45:57.105 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:46:57.116 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:46:57.116 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:47:57.126 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:48:57.124 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:48:57.124 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:49:57.137 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:50:57.138 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:50:57.138 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:51:57.142 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:52:57.150 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:52:57.150 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:53:57.157 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:54:57.169 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:54:57.169 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:55:57.171 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:56:57.182 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:56:57.182 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:57:57.191 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:58:57.192 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 15:58:57.192 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 15:59:57.203 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:00:57.217 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:00:57.217 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:01:57.222 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:02:57.233 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:02:57.233 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:03:57.247 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:04:57.261 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:04:57.261 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:05:57.267 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:06:57.282 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:06:57.282 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:07:57.296 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:08:57.306 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:08:57.306 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:09:57.320 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:10:57.332 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:10:57.332 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:11:57.335 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:12:57.335 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:12:57.335 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:13:57.343 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:14:57.351 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:14:57.351 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:15:57.360 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:16:57.372 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:16:57.372 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:17:57.386 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:18:57.394 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:18:57.394 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:19:57.391 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:20:57.389 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:21:57.386 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:21:57.386 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:22:57.387 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:23:57.395 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:23:57.395 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:24:57.398 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:25:57.407 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:25:57.407 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:26:57.409 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:27:57.420 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:27:57.420 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:28:57.430 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:29:57.430 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:29:57.430 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:30:57.432 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:31:57.445 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:31:57.445 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:32:57.445 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:33:57.457 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:33:57.457 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:34:57.467 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:35:57.467 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:35:57.467 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:36:57.480 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:37:57.478 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:37:57.478 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:38:57.495 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:39:57.497 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:39:57.497 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:40:57.507 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:41:57.515 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:41:57.515 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:42:57.520 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:43:57.534 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:43:57.534 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:44:57.537 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:45:57.537 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:45:57.537 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:46:57.552 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:47:57.559 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:47:57.559 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:48:57.573 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:49:57.579 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:49:57.579 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:50:57.590 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:51:57.596 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:51:57.596 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:52:57.600 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:53:57.602 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:53:57.602 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:54:57.607 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:55:57.617 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:55:57.617 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:56:57.619 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:57:57.629 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:57:57.629 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 16:58:57.639 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:59:57.645 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 16:59:57.645 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 17:00:57.656 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 17:01:57.671 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 17:01:57.671 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 17:02:57.680 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 17:03:57.680 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] # of executing flows: 0
+2021/08/23 17:03:57.680 +0800  INFO [FlowRunnerManager] [FlowRunnerManager-Cleaner-Thread] [Azkaban] Cleaning recently finished
+2021/08/23 17:04:52.362 +0800  INFO [AzkabanExecutorServer] [Thread-6] [Azkaban] Removing executor(host: KYE-1000850096.ky-tech.com.cn, port: 57192) entry from database...
+2021/08/23 17:04:52.375 +0800  WARN [AzkabanExecutorServer] [Thread-6] [Azkaban] Shutting down executor...
+2021/08/23 17:04:52.486 +0800  WARN [FlowRunnerManager] [Thread-6] [Azkaban] Shutting down FlowRunnerManager now...
+2021/08/23 17:04:52.486 +0800  INFO [DispatchMethod] [Thread-6] [Azkaban] Value of dispatch method is : PUSH
+2021/08/23 17:04:52.488 +0800  INFO [MBeanRegistrationManager] [Thread-6] [Azkaban] Jmx MBean azkaban.jmx.JmxJettyServer:name=executorJetty unregistered.
+2021/08/23 17:04:52.488 +0800  INFO [MBeanRegistrationManager] [Thread-6] [Azkaban] Jmx MBean azkaban.execapp.jmx.JmxFlowRunnerManager:name=flowRunnerManager unregistered.
+2021/08/23 17:04:52.488 +0800  INFO [MBeanRegistrationManager] [Thread-6] [Azkaban] Jmx MBean azkaban.execapp.jmx.JmxFlowRampManager:name=flowRampManager unregistered.
+2021/08/23 17:04:52.489 +0800  INFO [MBeanRegistrationManager] [Thread-6] [Azkaban] Jmx MBean azkaban.execapp.jmx.JmxJobMBeanManager:name=jobJMXMBean unregistered.
+2021/08/23 17:04:52.489 +0800  INFO [MBeanRegistrationManager] [Thread-6] [Azkaban] Jmx MBean azkaban.execapp.jmx.JmxJobCallback:name=jobCallbackJMXMBean unregistered.
+2021/08/23 17:04:52.489 +0800  WARN [FlowRunnerManager] [Thread-6] [Azkaban] Deleting execution dir: D:\code\azkaban-master\executions
