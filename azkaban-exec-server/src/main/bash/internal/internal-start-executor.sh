@@ -46,7 +46,7 @@ echo "Starting AzkabanExecutorServer on port $executorport ..."
 serverpath=`pwd`
 
 if [[ -z "$AZKABAN_OPTS" ]]; then
-  AZKABAN_OPTS="-Xmx3G"
+  AZKABAN_OPTS="-Xmx3G -Duser.timezone=GMT+08"
 fi
 # Set the log4j configuration file
 if [ -f $conf/log4j.properties ]; then

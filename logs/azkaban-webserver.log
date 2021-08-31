@@ -1750,3 +1750,593 @@ java.lang.InterruptedException
 	at azkaban.executor.ExecutorManager$QueueProcessorThread.processQueuedFlows(ExecutorManager.java:782)
 	at azkaban.executor.ExecutorManager$QueueProcessorThread.run(ExecutorManager.java:762)
 2021/08/23 17:04:52.425 +0800  INFO [AzkabanWebServer] [Thread-10] [Azkaban] kk thx bye.
+2021/08/24 14:42:49.467 +0800  INFO [AzkabanWebServer] [main] [Azkaban] Starting Jetty Azkaban Web Server...
+2021/08/24 14:42:49.498 +0800  INFO [AzkabanServer] [main] [Azkaban] Loading azkaban settings file from D:\code\azkaban-master\azkaban-web-server\src\main\resources\conf
+2021/08/24 14:42:49.498 +0800  INFO [AzkabanServer] [main] [Azkaban] Loading azkaban properties file
+2021/08/24 14:42:49.901 +0800  INFO [DispatchMethod] [main] [Azkaban] Value of dispatch method is : PUSH
+2021/08/24 14:42:50.131 +0800  INFO [DispatchMethod] [main] [Azkaban] Value of dispatch method is : PUSH
+2021/08/24 14:42:50.136 +0800  INFO [DispatchMethod] [main] [Azkaban] Value of dispatch method is : PUSH
+2021/08/24 14:42:50.137 +0800  INFO [DispatchMethod] [main] [Azkaban] Value of dispatch method is : PUSH
+2021/08/24 14:42:50.137 +0800  INFO [DispatchMethod] [main] [Azkaban] Value of dispatch method is : PUSH
+2021/08/24 14:42:50.738 +0800  INFO [WebServerProvider] [main] [Azkaban] Added SocketConnector as Ssl is disabled
+2021/08/24 14:42:50.742 +0800  INFO [WebServerProvider] [main] [Azkaban] Setting up connector with stats on: true
+2021/08/24 14:42:50.745 +0800  INFO [WebServerProvider] [main] [Azkaban] Starting server on port: 8081 # Max threads: 25
+2021/08/24 14:42:50.834 +0800  WARN [StorageCleaner] [main] [Azkaban] Project cleanup disabled. All artifacts will be stored.
+2021/08/24 14:42:50.835 +0800  INFO [ValidatorUtils] [main] [Azkaban] Creating XmlValidatorManager instance (loading validators)...
+2021/08/24 14:42:50.837 +0800  WARN [XmlValidatorManager] [main] [Azkaban] Validator directory validators does not exist or is not a directory.
+2021/08/24 14:42:50.838 +0800  WARN [XmlValidatorManager] [main] [Azkaban] Azkaban properties file does not contain the key project.validators.xml.file
+2021/08/24 14:42:50.839 +0800  INFO [ValidatorUtils] [main] [Azkaban] XmlValidatorManager instance created.
+2021/08/24 14:42:50.839 +0800  INFO [AzkabanProjectLoader] [main] [Azkaban] Using temp dir: D:\code\azkaban-master\temp
+2021/08/24 14:42:50.839 +0800  INFO [AzkabanProjectLoader] [main] [Azkaban] Project version retention is set to 3
+2021/08/24 14:42:51.725 +0800  INFO [InMemoryProjectCache] [main] [Azkaban] Loading active projects.
+2021/08/24 14:42:51.726 +0800  INFO [InMemoryProjectCache] [main] [Azkaban] Loading flows from active projects.
+2021/08/24 14:42:51.729 +0800  INFO [InMemoryProjectCache] [main] [Azkaban] Time taken to initialize and load cache in milliseconds: 889
+2021/08/24 14:42:51.730 +0800  INFO [ProjectManager] [main] [Azkaban] Loading whitelisted projects.
+2021/08/24 14:42:51.730 +0800  INFO [ProjectManager] [main] [Azkaban] ProjectManager instance created.
+2021/08/24 14:42:51.801 +0800  INFO [TriggerManager] [main] [Azkaban] TriggerManager loaded.
+2021/08/24 14:42:51.802 +0800  WARN [SessionCache] [main] [Azkaban] azkaban.session.max_number_per_ip_per_user is not configured. The number of sessions per IP per user is not being capped.
+2021/08/24 14:42:51.805 +0800  INFO [AzkabanWebServerModule] [main] [Azkaban] Loading user manager class azkaban.user.XmlUserManager
+2021/08/24 14:42:51.807 +0800  INFO [StdOutErrRedirect] [main] [Azkaban] 当前classpath的URI
+file:/D:/code/azkaban-master/azkaban-web-server/out/production/classes/
+2021/08/24 14:42:51.807 +0800  INFO [StdOutErrRedirect] [main] [Azkaban] D:\code\azkaban-master
+2021/08/24 14:42:51.807 +0800  INFO [StdOutErrRedirect] [main] [Azkaban] file:/D:/code/azkaban-master/azkaban-web-server/out/production/classes/
+2021/08/24 14:42:51.835 +0800  INFO [XmlUserManager] [main] [Azkaban] Loading user azkaban
+2021/08/24 14:42:51.835 +0800  INFO [XmlUserManager] [main] [Azkaban] Loading user metrics
+2021/08/24 14:42:51.835 +0800  INFO [XmlUserManager] [main] [Azkaban] Loading user admin
+2021/08/24 14:42:51.844 +0800  INFO [UserUtils] [main] [Azkaban] Starting configuration watching thread.
+2021/08/24 14:42:52.032 +0800  INFO [AzkabanWebServer] [main] [Azkaban] Loading built-in checker and action types
+2021/08/24 14:42:52.034 +0800  INFO [CheckerTypeLoader] [main] [Azkaban] Registering checker BasicTimeChecker
+2021/08/24 14:42:52.035 +0800  INFO [CheckerTypeLoader] [main] [Azkaban] Registering checker SlaChecker
+2021/08/24 14:42:52.035 +0800  INFO [CheckerTypeLoader] [main] [Azkaban] Registering checker ExecutionChecker
+2021/08/24 14:42:52.035 +0800  INFO [ActionTypeLoader] [main] [Azkaban] Registering action ExecuteFlowAction
+2021/08/24 14:42:52.035 +0800  INFO [ActionTypeLoader] [main] [Azkaban] Registering action KillExecutionAction
+2021/08/24 14:42:52.036 +0800  INFO [ActionTypeLoader] [main] [Azkaban] Registering action AlertAction
+2021/08/24 14:42:52.036 +0800  INFO [ActionTypeLoader] [main] [Azkaban] Registering action CreateTriggerAction
+2021/08/24 14:42:52.037 +0800  INFO [PluginCheckerAndActionsLoader] [main] [Azkaban] Loading plug-in checker and action types
+2021/08/24 14:42:52.037 +0800 ERROR [PluginCheckerAndActionsLoader] [main] [Azkaban] plugin path plugins/triggers doesn't exist!
+2021/08/24 14:42:52.057 +0800  INFO [AzkabanWebServer] [main] [Azkaban] Setting timezone to Asia/Shanghai
+2021/08/24 14:42:52.057 +0800  INFO [AzkabanWebServer] [main] [Azkaban] Registering MBeans...
+2021/08/24 14:42:52.062 +0800  INFO [MBeanRegistrationManager] [main] [Azkaban] Bean azkaban.jmx.JmxJettyServer registered.
+2021/08/24 14:42:52.064 +0800  INFO [MBeanRegistrationManager] [main] [Azkaban] Bean azkaban.jmx.JmxTriggerManager registered.
+2021/08/24 14:42:52.066 +0800  INFO [MBeanRegistrationManager] [main] [Azkaban] Bean azkaban.jmx.JmxExecutorManager registered.
+2021/08/24 14:42:52.075 +0800  INFO [MBeanRegistrationManager] [main] [Azkaban] Bean org.apache.log4j.jmx.HierarchyDynamicMBean registered.
+2021/08/24 14:42:52.075 +0800  INFO [AzkabanWebServer] [main] [Azkaban] ************* loginLoggerObjName is null, make sure there is a logger with name azkaban.webapp.servlet.LoginAbstractAzkabanServlet
+2021/08/24 14:42:52.075 +0800  INFO [ExecutorManager] [main] [Azkaban] Initializing executors from database.
+2021/08/24 14:42:52.077 +0800  INFO [ExecutorManager] [main] [Azkaban] Loading running flows from database..
+2021/08/24 14:42:52.100 +0800  INFO [ExecutorManager] [main] [Azkaban] Loaded 0 running flows
+2021/08/24 14:42:52.103 +0800  INFO [ExecutorManager] [main] [Azkaban] QueueProcessorThread active turned true
+2021/08/24 14:42:52.104 +0800  INFO [ExecutionLogsCleaner] [main] [Azkaban] Starting execution logs clean up thread
+2021/08/24 14:42:52.127 +0800  INFO [ExecutionLogsCleaner] [azk-execlog-cleaner] [Azkaban] Cleaning old logs from execution_logs
+2021/08/24 14:42:52.150 +0800  INFO [AzkabanWebServer] [main] [Azkaban] Setting up web resource dir D:/code/azkaban-master/azkaban-web-server/src/web
+2021/08/24 14:42:52.167 +0800  INFO [ExecutionLogsCleaner] [azk-execlog-cleaner] [Azkaban] Cleaning old log files before 2021-06-01T14:42:52.128+08:00
+2021/08/24 14:42:52.203 +0800  INFO [DispatchMethod] [main] [Azkaban] Value of dispatch method is : PUSH
+2021/08/24 14:42:52.214 +0800  INFO [JdbcTriggerImpl] [main] [Azkaban] Loading all triggers from db.
+2021/08/24 14:42:52.218 +0800  INFO [JdbcTriggerImpl] [main] [Azkaban] Loaded 0 triggers.
+2021/08/24 14:42:52.228 +0800  INFO [WebMetricsImpl] [main] [Azkaban] No metrics set up for Web server.
+2021/08/24 14:42:52.270 +0800  INFO [ProjectManagerServlet] [main] [Azkaban] downloadBufferSize: 8192
+2021/08/24 14:42:52.663 +0800  INFO [AzkabanWebServer] [main] [Azkaban] Server started
+2021/08/24 14:42:53.185 +0800  INFO [ExecutionLogsCleaner] [azk-execlog-cleaner] [Azkaban] Cleaned up 0 log entries.
+2021/08/24 14:42:53.185 +0800  INFO [ExecutionLogsCleaner] [azk-execlog-cleaner] [Azkaban] log clean up time: 1018 ms.
+2021/08/24 14:44:32.120 +0800  INFO [AzkabanCommonModule] [1315908533@qtp-71016405-0] [Azkaban] Event reporter is not enabled
+2021/08/24 14:44:32.125 +0800  INFO [LoginAbstractAzkabanServlet] [1315908533@qtp-71016405-0] [Azkaban] 0  -  "GET / - HTTP/1.1" browser
+2021/08/24 14:44:34.512 +0800  INFO [LoginAbstractAzkabanServlet] [1315908533@qtp-71016405-0] [Azkaban] 0  -  "POST / - HTTP/1.1" browser
+2021/08/24 14:44:34.520 +0800  INFO [LoginAbstractAzkabanServlet] [1315908533@qtp-71016405-0] [Azkaban] Session id created for user 'admin' and ip 0, 0 session(s) found from this IP
+2021/08/24 14:44:34.570 +0800  INFO [LoginAbstractAzkabanServlet] [1315908533@qtp-71016405-0] [Azkaban] 0 admin "GET / - HTTP/1.1" browser
+2021/08/24 14:44:34.571 +0800  INFO [LoginAbstractAzkabanServlet] [1315908533@qtp-71016405-0] [Azkaban] 0 admin "GET /index - HTTP/1.1" browser
+2021/08/24 14:44:34.572 +0800  INFO [StdOutErrRedirect] [1315908533@qtp-71016405-0] [Azkaban] ----------version-------------------null
+2021/08/24 14:44:50.156 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "POST /manager - HTTP/1.1" browser
+2021/08/24 14:44:50.157 +0800  INFO [ProjectManagerServlet] [1979412130@qtp-71016405-6] [Azkaban] Create project yc_test
+2021/08/24 14:44:50.157 +0800  INFO [InMemoryProjectCache] [1979412130@qtp-71016405-6] [Azkaban] No active project with name yc_test exists in cache, fetching from DB.
+2021/08/24 14:44:50.167 +0800  INFO [ProjectManager] [1979412130@qtp-71016405-6] [Azkaban] Trying to create yc_test by user admin
+2021/08/24 14:44:50.238 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager project=yc_test HTTP/1.1" browser
+2021/08/24 14:44:50.238 +0800  INFO [StdOutErrRedirect] [1979412130@qtp-71016405-6] [Azkaban] ----------version-------------------null
+2021/08/24 14:45:20.754 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "POST /manager - HTTP/1.1" browser
+2021/08/24 14:45:20.772 +0800  INFO [ProjectManagerServlet] [463123962@qtp-71016405-3] [Azkaban] Upload: reference of project yc_test is 1385141212
+2021/08/24 14:45:20.774 +0800  INFO [ProjectManagerServlet] [463123962@qtp-71016405-3] [Azkaban] Uploading file to web server basicFlow20Project.zip
+2021/08/24 14:45:20.784 +0800  INFO [AzkabanProjectLoader] [463123962@qtp-71016405-3] [Azkaban] Uploading files to yc_test
+2021/08/24 14:45:20.789 +0800  INFO [ValidatorUtils] [463123962@qtp-71016405-3] [Azkaban] Validating project yc_test using the registered validators []
+2021/08/24 14:45:20.922 +0800  INFO [ProjectStorageManager] [463123962@qtp-71016405-3] [Azkaban] Adding archive to storage. Meta:StorageMetadata{projectId='1', version='1'} File: basicFlow20Project.zip[513 bytes]
+2021/08/24 14:45:20.923 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] Uploading Project ID: 1 file: basicFlow20Project.zip [513 bytes]
+2021/08/24 14:45:20.925 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] Creating MD5 hash for upload basicFlow20Project.zip
+2021/08/24 14:45:20.926 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] MD5 hash created
+2021/08/24 14:45:20.937 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] Read bytes for basicFlow20Project.zip size:513
+2021/08/24 14:45:20.937 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] Running update for basicFlow20Project.zip chunk 0
+2021/08/24 14:45:20.944 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] Finished update for basicFlow20Project.zip chunk 0
+2021/08/24 14:45:20.950 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] Uploaded Project ID: 1 file: basicFlow20Project.zip [513 bytes] in 0 sec
+2021/08/24 14:45:20.950 +0800  INFO [AzkabanProjectLoader] [463123962@qtp-71016405-3] [Azkaban] Uploading flow to db for project basicFlow20Project.zip
+2021/08/24 14:45:20.950 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] Uploading flows
+2021/08/24 14:45:20.962 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] Flow upload basic is byte size 352
+2021/08/24 14:45:20.968 +0800  INFO [AzkabanProjectLoader] [463123962@qtp-71016405-3] [Azkaban] Changing project versions for project basicFlow20Project.zip
+2021/08/24 14:45:20.981 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] Uploading flow file basic.flow, version 1 for project 1, version 1, file length is [319 bytes]
+2021/08/24 14:45:20.983 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] Read bytes for basic.flow, size:319
+2021/08/24 14:45:20.994 +0800 ERROR [FlowLoaderUtils] [463123962@qtp-71016405-3] [Azkaban] Failed to delete the directory
+java.io.IOException: Unable to delete file: temp\99498093\basic.flow
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2279)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1653)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1535)
+	at azkaban.project.FlowLoaderUtils.cleanUpDir(FlowLoaderUtils.java:290)
+	at azkaban.project.AzkabanProjectLoader.uploadProject(AzkabanProjectLoader.java:202)
+	at azkaban.project.ProjectManager.uploadProject(ProjectManager.java:511)
+	at azkaban.webapp.servlet.ProjectManagerServlet.ajaxHandleUpload(ProjectManagerServlet.java:1919)
+	at azkaban.webapp.servlet.ProjectManagerServlet.handleUpload(ProjectManagerServlet.java:2093)
+	at azkaban.webapp.servlet.ProjectManagerServlet.handleMultiformPost(ProjectManagerServlet.java:281)
+	at azkaban.webapp.servlet.LoginAbstractAzkabanServlet.doPost(LoginAbstractAzkabanServlet.java:484)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1221)
+	at azkaban.webapp.APIMetricsFilter.recordMetrics(APIMetricsFilter.java:99)
+	at azkaban.webapp.APIMetricsFilter.doFilter(APIMetricsFilter.java:65)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:399)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:945)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:756)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+2021/08/24 14:45:20.996 +0800  INFO [AzkabanProjectLoader] [463123962@qtp-71016405-3] [Azkaban] Cleaning up old install files older than -2
+2021/08/24 14:45:21.010 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] clean older project given project id 1 doesn't take effect.
+2021/08/24 14:45:21.013 +0800  INFO [ProjectManagerServlet] [463123962@qtp-71016405-3] [Azkaban] Upload: project yc_test version is 1, reference is 1385141212
+2021/08/24 14:45:21.014 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager project=yc_test HTTP/1.1" browser
+2021/08/24 14:45:21.015 +0800  INFO [StdOutErrRedirect] [463123962@qtp-71016405-3] [Azkaban] ----------version-------------------null
+2021/08/24 14:45:22.768 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:45:22.769 +0800  INFO [StdOutErrRedirect] [463123962@qtp-71016405-3] [Azkaban] ----------version-------------------null
+2021/08/24 14:45:22.847 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:45:22.848 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:45:22.849 +0800  INFO [LoginAbstractAzkabanServlet] [1315908533@qtp-71016405-0] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:45:22.849 +0800  WARN [FlowTriggerScheduler] [1315908533@qtp-71016405-0] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 14:45:22.854 +0800  INFO [LoginAbstractAzkabanServlet] [1315908533@qtp-71016405-0] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=basic HTTP/1.1" browser
+2021/08/24 14:45:27.957 +0800  INFO [LoginAbstractAzkabanServlet] [1315908533@qtp-71016405-0] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 14:45:29.781 +0800  INFO [LoginAbstractAzkabanServlet] [1315908533@qtp-71016405-0] [Azkaban] 0 admin "GET /flowtriggerinstance project=yc_test&flow=basic&ajax=fetchTriggerInstances&start=0&length=16 HTTP/1.1" browser
+2021/08/24 14:45:33.127 +0800  INFO [LoginAbstractAzkabanServlet] [1315908533@qtp-71016405-0] [Azkaban] 0 admin "GET /manager project=yc_test HTTP/1.1" browser
+2021/08/24 14:45:33.127 +0800  INFO [StdOutErrRedirect] [1315908533@qtp-71016405-0] [Azkaban] ----------version-------------------null
+2021/08/24 14:45:38.080 +0800  INFO [LoginAbstractAzkabanServlet] [1315908533@qtp-71016405-0] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:45:38.080 +0800  INFO [StdOutErrRedirect] [1315908533@qtp-71016405-0] [Azkaban] ----------version-------------------null
+2021/08/24 14:45:38.147 +0800  INFO [LoginAbstractAzkabanServlet] [1315908533@qtp-71016405-0] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:45:38.148 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:45:38.151 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:45:38.151 +0800  WARN [FlowTriggerScheduler] [1979412130@qtp-71016405-6] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 14:45:38.155 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=basic HTTP/1.1" browser
+2021/08/24 14:45:39.005 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 14:45:39.485 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /flowtriggerinstance project=yc_test&flow=basic&ajax=fetchTriggerInstances&start=0&length=16 HTTP/1.1" browser
+2021/08/24 14:45:47.236 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /executor project=yc_test&ajax=fetchscheduledflowgraph&flow=basic HTTP/1.1" browser
+2021/08/24 14:45:47.247 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /executor project=yc_test&ajax=flowInfo&flow=basic HTTP/1.1" browser
+2021/08/24 14:45:50.903 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "POST /executor - HTTP/1.1" browser
+2021/08/24 14:45:50.918 +0800  INFO [ExecutorManager] [1979412130@qtp-71016405-6] [Azkaban] Submitting execution flow basic by admin
+2021/08/24 14:45:50.927 +0800  INFO [ExecutionFlowDao] [1979412130@qtp-71016405-6] [Azkaban] Flow given basic given id 1
+2021/08/24 14:45:52.267 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Successfully refreshed executor: KYE-1000850096.ky-tech.com.cn:51520 (id: 9), active=true with executor info : ExecutorInfo{remainingMemoryPercent=0.0, remainingMemoryInMB=0, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=0.0}
+2021/08/24 14:45:52.267 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:45:52.278 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:45:52.278 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:45:52.279 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:45:56.776 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /executor execid=1 HTTP/1.1" browser
+2021/08/24 14:45:56.776 +0800  INFO [StdOutErrRedirect] [1979412130@qtp-71016405-6] [Azkaban] ----------version-------------------null
+2021/08/24 14:45:56.845 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /executor execid=1&ajax=fetchExecFlowLogs&offset=0&length=50000 HTTP/1.1" browser
+2021/08/24 14:45:56.860 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /executor execid=1&ajax=fetchexecflow HTTP/1.1" browser
+2021/08/24 14:45:56.860 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /flowtriggerinstance execid=1&ajax=fetchTriggerStatus HTTP/1.1" browser
+2021/08/24 14:45:56.863 +0800  INFO [ExecutorServlet] [1979412130@qtp-71016405-6] [Azkaban] Fetching 1
+2021/08/24 14:45:56.887 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /executor execid=1&ajax=fetchexecflowupdate&lastUpdateTime=-1 HTTP/1.1" browser
+2021/08/24 14:45:56.888 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /executor execid=1&ajax=fetchExecFlowLogs&offset=0&length=50000 HTTP/1.1" browser
+2021/08/24 14:45:56.890 +0800  INFO [ExecutorServlet] [463123962@qtp-71016405-3] [Azkaban] Fetching 1
+2021/08/24 14:46:03.381 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager project=yc_test HTTP/1.1" browser
+2021/08/24 14:46:03.381 +0800  INFO [StdOutErrRedirect] [1979412130@qtp-71016405-6] [Azkaban] ----------version-------------------null
+2021/08/24 14:46:04.909 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowjobs&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:05.935 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:05.935 +0800  INFO [StdOutErrRedirect] [1979412130@qtp-71016405-6] [Azkaban] ----------version-------------------null
+2021/08/24 14:46:05.992 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:05.993 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:46:05.993 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:46:05.993 +0800  WARN [FlowTriggerScheduler] [583497410@qtp-71016405-2] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 14:46:05.997 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:06.796 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 14:46:16.933 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:16.933 +0800  INFO [StdOutErrRedirect] [463123962@qtp-71016405-3] [Azkaban] ----------version-------------------null
+2021/08/24 14:46:16.983 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:16.983 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:46:16.983 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:46:16.983 +0800  WARN [FlowTriggerScheduler] [583497410@qtp-71016405-2] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 14:46:16.986 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:17.009 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 14:46:17.565 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:17.565 +0800  INFO [StdOutErrRedirect] [463123962@qtp-71016405-3] [Azkaban] ----------version-------------------null
+2021/08/24 14:46:17.615 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:46:17.615 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:46:17.615 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:17.615 +0800  WARN [FlowTriggerScheduler] [1979412130@qtp-71016405-6] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 14:46:17.619 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:17.641 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 14:46:17.750 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:17.750 +0800  INFO [StdOutErrRedirect] [1979412130@qtp-71016405-6] [Azkaban] ----------version-------------------null
+2021/08/24 14:46:17.816 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:17.818 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:46:17.819 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:46:17.819 +0800  WARN [FlowTriggerScheduler] [583497410@qtp-71016405-2] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 14:46:17.822 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:17.842 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 14:46:17.941 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:17.942 +0800  INFO [StdOutErrRedirect] [583497410@qtp-71016405-2] [Azkaban] ----------version-------------------null
+2021/08/24 14:46:17.992 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:17.992 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:46:17.992 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:46:17.993 +0800  WARN [FlowTriggerScheduler] [1979412130@qtp-71016405-6] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 14:46:17.996 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:18.012 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 14:46:18.132 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:18.132 +0800  INFO [StdOutErrRedirect] [583497410@qtp-71016405-2] [Azkaban] ----------version-------------------null
+2021/08/24 14:46:18.180 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:18.180 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:46:18.180 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:46:18.180 +0800  WARN [FlowTriggerScheduler] [463123962@qtp-71016405-3] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 14:46:18.183 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:18.204 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 14:46:19.293 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /executor execid=1 HTTP/1.1" browser
+2021/08/24 14:46:19.293 +0800  INFO [StdOutErrRedirect] [463123962@qtp-71016405-3] [Azkaban] ----------version-------------------null
+2021/08/24 14:46:19.336 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /executor execid=1&ajax=fetchExecFlowLogs&offset=0&length=50000 HTTP/1.1" browser
+2021/08/24 14:46:19.344 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /executor execid=1&ajax=fetchexecflow HTTP/1.1" browser
+2021/08/24 14:46:19.344 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /flowtriggerinstance execid=1&ajax=fetchTriggerStatus HTTP/1.1" browser
+2021/08/24 14:46:19.346 +0800  INFO [ExecutorServlet] [463123962@qtp-71016405-3] [Azkaban] Fetching 1
+2021/08/24 14:46:19.366 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /executor execid=1&ajax=fetchexecflowupdate&lastUpdateTime=-1 HTTP/1.1" browser
+2021/08/24 14:46:19.366 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /executor execid=1&ajax=fetchExecFlowLogs&offset=0&length=50000 HTTP/1.1" browser
+2021/08/24 14:46:19.368 +0800  INFO [ExecutorServlet] [463123962@qtp-71016405-3] [Azkaban] Fetching 1
+2021/08/24 14:46:26.550 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /manager project=yc_test HTTP/1.1" browser
+2021/08/24 14:46:26.550 +0800  INFO [StdOutErrRedirect] [583497410@qtp-71016405-2] [Azkaban] ----------version-------------------null
+2021/08/24 14:46:27.693 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowjobs&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:28.038 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:28.038 +0800  INFO [StdOutErrRedirect] [583497410@qtp-71016405-2] [Azkaban] ----------version-------------------null
+2021/08/24 14:46:28.098 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:28.098 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:46:28.099 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:46:28.099 +0800  WARN [FlowTriggerScheduler] [1979412130@qtp-71016405-6] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 14:46:28.102 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=basic HTTP/1.1" browser
+2021/08/24 14:46:29.229 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 14:46:40.948 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Successfully refreshed executor: KYE-1000850096.ky-tech.com.cn:51520 (id: 9), active=true with executor info : ExecutorInfo{remainingMemoryPercent=0.0, remainingMemoryInMB=0, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=0.0}
+2021/08/24 14:46:40.948 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:46:40.948 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:46:40.948 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:46:40.949 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:47:29.509 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager project=yc_test HTTP/1.1" browser
+2021/08/24 14:47:29.509 +0800  INFO [StdOutErrRedirect] [1979412130@qtp-71016405-6] [Azkaban] ----------version-------------------null
+2021/08/24 14:47:30.948 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Successfully refreshed executor: KYE-1000850096.ky-tech.com.cn:51520 (id: 9), active=true with executor info : ExecutorInfo{remainingMemoryPercent=0.0, remainingMemoryInMB=0, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=0.0}
+2021/08/24 14:47:30.948 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:47:30.949 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:47:30.949 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:47:30.949 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:47:31.207 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager project=yc_test&permissions HTTP/1.1" browser
+2021/08/24 14:47:31.207 +0800  INFO [StdOutErrRedirect] [1979412130@qtp-71016405-6] [Azkaban] ----------version-------------------null
+2021/08/24 14:47:31.925 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager project=yc_test&logs HTTP/1.1" browser
+2021/08/24 14:47:31.925 +0800  INFO [StdOutErrRedirect] [1979412130@qtp-71016405-6] [Azkaban] ----------version-------------------null
+2021/08/24 14:47:31.955 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchProjectLogs&size=1000&skip=0 HTTP/1.1" browser
+2021/08/24 14:47:32.365 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager project=yc_test&permissions HTTP/1.1" browser
+2021/08/24 14:47:32.366 +0800  INFO [StdOutErrRedirect] [1979412130@qtp-71016405-6] [Azkaban] ----------version-------------------null
+2021/08/24 14:47:32.725 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager project=yc_test HTTP/1.1" browser
+2021/08/24 14:47:32.725 +0800  INFO [StdOutErrRedirect] [1979412130@qtp-71016405-6] [Azkaban] ----------version-------------------null
+2021/08/24 14:47:33.591 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager project=yc_test&permissions HTTP/1.1" browser
+2021/08/24 14:47:33.591 +0800  INFO [StdOutErrRedirect] [1979412130@qtp-71016405-6] [Azkaban] ----------version-------------------null
+2021/08/24 14:47:35.454 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager project=yc_test HTTP/1.1" browser
+2021/08/24 14:47:35.454 +0800  INFO [StdOutErrRedirect] [1979412130@qtp-71016405-6] [Azkaban] ----------version-------------------null
+2021/08/24 14:47:36.373 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:47:36.373 +0800  INFO [StdOutErrRedirect] [1979412130@qtp-71016405-6] [Azkaban] ----------version-------------------null
+2021/08/24 14:47:36.430 +0800  INFO [LoginAbstractAzkabanServlet] [1979412130@qtp-71016405-6] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:47:36.430 +0800  INFO [LoginAbstractAzkabanServlet] [583497410@qtp-71016405-2] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:47:36.430 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:47:36.430 +0800  WARN [FlowTriggerScheduler] [463123962@qtp-71016405-3] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 14:47:36.433 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=basic HTTP/1.1" browser
+2021/08/24 14:48:20.949 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Successfully refreshed executor: KYE-1000850096.ky-tech.com.cn:51520 (id: 9), active=true with executor info : ExecutorInfo{remainingMemoryPercent=0.0, remainingMemoryInMB=0, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=0.0}
+2021/08/24 14:48:20.949 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:48:20.950 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:48:20.950 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:48:20.950 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:49:10.953 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Successfully refreshed executor: KYE-1000850096.ky-tech.com.cn:51520 (id: 9), active=true with executor info : ExecutorInfo{remainingMemoryPercent=0.0, remainingMemoryInMB=0, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=0.0}
+2021/08/24 14:49:10.953 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:49:10.954 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:49:10.954 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:49:10.954 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:50:00.952 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Successfully refreshed executor: KYE-1000850096.ky-tech.com.cn:51520 (id: 9), active=true with executor info : ExecutorInfo{remainingMemoryPercent=0.0, remainingMemoryInMB=0, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=0.0}
+2021/08/24 14:50:00.952 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:50:00.952 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:50:00.953 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:50:00.953 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:50:50.952 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Successfully refreshed executor: KYE-1000850096.ky-tech.com.cn:51520 (id: 9), active=true with executor info : ExecutorInfo{remainingMemoryPercent=0.0, remainingMemoryInMB=0, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=0.0}
+2021/08/24 14:50:50.952 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:50:50.952 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:50:50.952 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:50:50.952 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:51:40.955 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Successfully refreshed executor: KYE-1000850096.ky-tech.com.cn:51520 (id: 9), active=true with executor info : ExecutorInfo{remainingMemoryPercent=0.0, remainingMemoryInMB=0, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=0.0}
+2021/08/24 14:51:40.955 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:51:40.955 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:51:40.955 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:51:40.955 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:52:30.953 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Successfully refreshed executor: KYE-1000850096.ky-tech.com.cn:51520 (id: 9), active=true with executor info : ExecutorInfo{remainingMemoryPercent=0.0, remainingMemoryInMB=0, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=0.0}
+2021/08/24 14:52:30.953 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:52:30.954 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:52:30.954 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:52:30.954 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:53:20.955 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Successfully refreshed executor: KYE-1000850096.ky-tech.com.cn:51520 (id: 9), active=true with executor info : ExecutorInfo{remainingMemoryPercent=0.0, remainingMemoryInMB=0, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=0.0}
+2021/08/24 14:53:20.955 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:53:20.955 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:53:20.955 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:53:20.955 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:54:10.956 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Successfully refreshed executor: KYE-1000850096.ky-tech.com.cn:51520 (id: 9), active=true with executor info : ExecutorInfo{remainingMemoryPercent=0.0, remainingMemoryInMB=0, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=0.0}
+2021/08/24 14:54:10.956 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:54:10.956 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:54:10.956 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:54:10.956 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:54:42.371 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:54:42.371 +0800  INFO [StdOutErrRedirect] [463123962@qtp-71016405-3] [Azkaban] ----------version-------------------null
+2021/08/24 14:54:42.434 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:54:42.435 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:54:42.438 +0800  INFO [LoginAbstractAzkabanServlet] [1561784264@qtp-71016405-8] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:54:42.438 +0800  WARN [FlowTriggerScheduler] [1561784264@qtp-71016405-8] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 14:54:42.439 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=basic HTTP/1.1" browser
+2021/08/24 14:54:43.802 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 14:54:46.145 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:54:46.145 +0800  INFO [StdOutErrRedirect] [989864066@qtp-71016405-7] [Azkaban] ----------version-------------------null
+2021/08/24 14:54:46.215 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:54:46.215 +0800  INFO [LoginAbstractAzkabanServlet] [1561784264@qtp-71016405-8] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:54:46.215 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:54:46.215 +0800  WARN [FlowTriggerScheduler] [463123962@qtp-71016405-3] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 14:54:46.217 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=basic HTTP/1.1" browser
+2021/08/24 14:54:46.231 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 14:54:46.377 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:54:46.377 +0800  INFO [StdOutErrRedirect] [989864066@qtp-71016405-7] [Azkaban] ----------version-------------------null
+2021/08/24 14:54:46.431 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:54:46.431 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:54:46.431 +0800  INFO [LoginAbstractAzkabanServlet] [1561784264@qtp-71016405-8] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:54:46.431 +0800  WARN [FlowTriggerScheduler] [1561784264@qtp-71016405-8] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 14:54:46.434 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=basic HTTP/1.1" browser
+2021/08/24 14:54:46.447 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 14:54:46.721 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:54:46.721 +0800  INFO [StdOutErrRedirect] [989864066@qtp-71016405-7] [Azkaban] ----------version-------------------null
+2021/08/24 14:54:46.771 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:54:46.771 +0800  INFO [LoginAbstractAzkabanServlet] [1561784264@qtp-71016405-8] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:54:46.772 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:54:46.772 +0800  WARN [FlowTriggerScheduler] [463123962@qtp-71016405-3] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 14:54:46.774 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=basic HTTP/1.1" browser
+2021/08/24 14:54:46.790 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 14:54:46.937 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:54:46.937 +0800  INFO [StdOutErrRedirect] [989864066@qtp-71016405-7] [Azkaban] ----------version-------------------null
+2021/08/24 14:54:46.975 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:54:46.975 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:54:46.975 +0800  INFO [LoginAbstractAzkabanServlet] [1561784264@qtp-71016405-8] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:54:46.975 +0800  WARN [FlowTriggerScheduler] [1561784264@qtp-71016405-8] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 14:54:46.978 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=basic HTTP/1.1" browser
+2021/08/24 14:54:46.995 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 14:54:50.473 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /flowtriggerinstance project=yc_test&flow=basic&ajax=fetchTriggerInstances&start=0&length=16 HTTP/1.1" browser
+2021/08/24 14:55:00.957 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Successfully refreshed executor: KYE-1000850096.ky-tech.com.cn:51520 (id: 9), active=true with executor info : ExecutorInfo{remainingMemoryPercent=0.0, remainingMemoryInMB=0, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=0.0}
+2021/08/24 14:55:00.957 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:55:00.957 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:55:00.958 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:55:00.958 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:55:04.392 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /executor execid=1 HTTP/1.1" browser
+2021/08/24 14:55:04.392 +0800  INFO [StdOutErrRedirect] [989864066@qtp-71016405-7] [Azkaban] ----------version-------------------null
+2021/08/24 14:55:04.441 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /executor execid=1&ajax=fetchExecFlowLogs&offset=0&length=50000 HTTP/1.1" browser
+2021/08/24 14:55:04.447 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /executor execid=1&ajax=fetchexecflow HTTP/1.1" browser
+2021/08/24 14:55:04.447 +0800  INFO [LoginAbstractAzkabanServlet] [1561784264@qtp-71016405-8] [Azkaban] 0 admin "GET /flowtriggerinstance execid=1&ajax=fetchTriggerStatus HTTP/1.1" browser
+2021/08/24 14:55:04.449 +0800  INFO [ExecutorServlet] [989864066@qtp-71016405-7] [Azkaban] Fetching 1
+2021/08/24 14:55:04.470 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /executor execid=1&ajax=fetchexecflowupdate&lastUpdateTime=-1 HTTP/1.1" browser
+2021/08/24 14:55:04.470 +0800  INFO [LoginAbstractAzkabanServlet] [1561784264@qtp-71016405-8] [Azkaban] 0 admin "GET /executor execid=1&ajax=fetchExecFlowLogs&offset=0&length=50000 HTTP/1.1" browser
+2021/08/24 14:55:04.472 +0800  INFO [ExecutorServlet] [989864066@qtp-71016405-7] [Azkaban] Fetching 1
+2021/08/24 14:55:50.959 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Successfully refreshed executor: KYE-1000850096.ky-tech.com.cn:51520 (id: 9), active=true with executor info : ExecutorInfo{remainingMemoryPercent=0.0, remainingMemoryInMB=0, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=0.0}
+2021/08/24 14:55:50.959 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:55:50.959 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:55:50.959 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:55:50.959 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:56:40.959 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Successfully refreshed executor: KYE-1000850096.ky-tech.com.cn:51520 (id: 9), active=true with executor info : ExecutorInfo{remainingMemoryPercent=0.0, remainingMemoryInMB=0, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=0.0}
+2021/08/24 14:56:40.959 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:56:40.959 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:56:40.959 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:56:40.959 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:57:05.183 +0800  INFO [LoginAbstractAzkabanServlet] [1561784264@qtp-71016405-8] [Azkaban] 0 admin "GET /executor execid=1&ajax=fetchexecflowupdate&lastUpdateTime=-1 HTTP/1.1" browser
+2021/08/24 14:57:05.185 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /executor execid=1&ajax=fetchExecFlowLogs&offset=0&length=50000 HTTP/1.1" browser
+2021/08/24 14:57:05.186 +0800  INFO [ExecutorServlet] [1561784264@qtp-71016405-8] [Azkaban] Fetching 1
+2021/08/24 14:57:30.960 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Successfully refreshed executor: KYE-1000850096.ky-tech.com.cn:51520 (id: 9), active=true with executor info : ExecutorInfo{remainingMemoryPercent=0.0, remainingMemoryInMB=0, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=0.0}
+2021/08/24 14:57:30.960 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:57:30.961 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:57:30.961 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :1
+2021/08/24 14:57:30.961 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 1 with error count 0
+2021/08/24 14:57:33.364 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "POST /executor - HTTP/1.1" browser
+2021/08/24 14:57:33.393 +0800 ERROR [Emailer] [989864066@qtp-71016405-7] [Azkaban] Failed to send error email message for execution 1
+java.lang.RuntimeException: From address not set.
+	at azkaban.utils.EmailMessage.checkSettings(EmailMessage.java:153)
+	at azkaban.utils.EmailMessage.sendEmail(EmailMessage.java:166)
+	at azkaban.utils.Emailer.sendEmail(Emailer.java:244)
+	at azkaban.utils.Emailer.alertOnError(Emailer.java:144)
+	at azkaban.executor.ExecutionControllerUtils.alertUserOnFlowFinished(ExecutionControllerUtils.java:122)
+	at azkaban.executor.ExecutionFinalizer.finalizeFlow(ExecutionFinalizer.java:97)
+	at azkaban.executor.ExecutorManager.cancelFlow(ExecutorManager.java:552)
+	at azkaban.webapp.servlet.ExecutorServlet.ajaxCancelFlow(ExecutorServlet.java:798)
+	at azkaban.webapp.servlet.ExecutorServlet.handleAJAXAction(ExecutorServlet.java:181)
+	at azkaban.webapp.servlet.ExecutorServlet.handlePost(ExecutorServlet.java:326)
+	at azkaban.webapp.servlet.LoginAbstractAzkabanServlet.doPost(LoginAbstractAzkabanServlet.java:515)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1221)
+	at azkaban.webapp.APIMetricsFilter.recordMetrics(APIMetricsFilter.java:99)
+	at azkaban.webapp.APIMetricsFilter.doFilter(APIMetricsFilter.java:65)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:399)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:945)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:756)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+2021/08/24 14:57:34.499 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /executor execid=1&ajax=fetchexecflowupdate&lastUpdateTime=-1 HTTP/1.1" browser
+2021/08/24 14:57:34.501 +0800  INFO [ExecutorServlet] [989864066@qtp-71016405-7] [Azkaban] Fetching 1
+2021/08/24 14:57:39.314 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager project=yc_test HTTP/1.1" browser
+2021/08/24 14:57:39.314 +0800  INFO [StdOutErrRedirect] [989864066@qtp-71016405-7] [Azkaban] ----------version-------------------null
+2021/08/24 14:57:40.442 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:57:40.442 +0800  INFO [StdOutErrRedirect] [989864066@qtp-71016405-7] [Azkaban] ----------version-------------------null
+2021/08/24 14:57:40.506 +0800  INFO [LoginAbstractAzkabanServlet] [989864066@qtp-71016405-7] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=basic HTTP/1.1" browser
+2021/08/24 14:57:40.506 +0800  INFO [LoginAbstractAzkabanServlet] [1561784264@qtp-71016405-8] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:57:40.506 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=basic HTTP/1.1" browser
+2021/08/24 14:57:40.507 +0800  WARN [FlowTriggerScheduler] [463123962@qtp-71016405-3] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 14:57:40.510 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=basic HTTP/1.1" browser
+2021/08/24 14:57:41.110 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager project=yc_test&flow=basic&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 15:23:16.282 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager project=yc_test HTTP/1.1" browser
+2021/08/24 15:23:16.282 +0800  INFO [StdOutErrRedirect] [463123962@qtp-71016405-3] [Azkaban] ----------version-------------------null
+2021/08/24 15:23:24.556 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "POST /manager - HTTP/1.1" browser
+2021/08/24 15:23:24.556 +0800  INFO [ProjectManagerServlet] [463123962@qtp-71016405-3] [Azkaban] Upload: reference of project yc_test is 1385141212
+2021/08/24 15:23:24.557 +0800  INFO [ProjectManagerServlet] [463123962@qtp-71016405-3] [Azkaban] Uploading file to web server fisrtJob.zip
+2021/08/24 15:23:24.560 +0800  INFO [AzkabanProjectLoader] [463123962@qtp-71016405-3] [Azkaban] Uploading files to yc_test
+2021/08/24 15:23:24.565 +0800  INFO [ValidatorUtils] [463123962@qtp-71016405-3] [Azkaban] Validating project yc_test using the registered validators []
+2021/08/24 15:23:24.581 +0800  INFO [ProjectStorageManager] [463123962@qtp-71016405-3] [Azkaban] Adding archive to storage. Meta:StorageMetadata{projectId='1', version='2'} File: fisrtJob.zip[1306 bytes]
+2021/08/24 15:23:24.581 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] Uploading Project ID: 1 file: fisrtJob.zip [1306 bytes]
+2021/08/24 15:23:24.582 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] Creating MD5 hash for upload fisrtJob.zip
+2021/08/24 15:23:24.582 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] MD5 hash created
+2021/08/24 15:23:24.597 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] Read bytes for fisrtJob.zip size:1306
+2021/08/24 15:23:24.597 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] Running update for fisrtJob.zip chunk 0
+2021/08/24 15:23:24.602 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] Finished update for fisrtJob.zip chunk 0
+2021/08/24 15:23:24.608 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] Uploaded Project ID: 1 file: fisrtJob.zip [1306 bytes] in 0 sec
+2021/08/24 15:23:24.608 +0800  INFO [AzkabanProjectLoader] [463123962@qtp-71016405-3] [Azkaban] Uploading flow to db for project fisrtJob.zip
+2021/08/24 15:23:24.608 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] Uploading flows
+2021/08/24 15:23:24.609 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] Flow upload end is byte size 434
+2021/08/24 15:23:24.613 +0800  INFO [AzkabanProjectLoader] [463123962@qtp-71016405-3] [Azkaban] Changing project versions for project fisrtJob.zip
+2021/08/24 15:23:24.617 +0800  INFO [AzkabanProjectLoader] [463123962@qtp-71016405-3] [Azkaban] Uploading Job properties
+2021/08/24 15:23:24.644 +0800  INFO [AzkabanProjectLoader] [463123962@qtp-71016405-3] [Azkaban] Uploading Props properties
+2021/08/24 15:23:24.654 +0800  INFO [AzkabanProjectLoader] [463123962@qtp-71016405-3] [Azkaban] Cleaning up old install files older than -1
+2021/08/24 15:23:24.658 +0800  INFO [JdbcProjectImpl] [463123962@qtp-71016405-3] [Azkaban] clean older project given project id 1 doesn't take effect.
+2021/08/24 15:23:24.660 +0800  INFO [ProjectManagerServlet] [463123962@qtp-71016405-3] [Azkaban] Upload: project yc_test version is 2, reference is 1385141212
+2021/08/24 15:23:24.662 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager project=yc_test HTTP/1.1" browser
+2021/08/24 15:23:24.662 +0800  INFO [StdOutErrRedirect] [463123962@qtp-71016405-3] [Azkaban] ----------version-------------------null
+2021/08/24 15:23:27.056 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager project=yc_test&flow=end HTTP/1.1" browser
+2021/08/24 15:23:27.057 +0800  INFO [StdOutErrRedirect] [463123962@qtp-71016405-3] [Azkaban] ----------version-------------------null
+2021/08/24 15:23:27.125 +0800  INFO [LoginAbstractAzkabanServlet] [463123962@qtp-71016405-3] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=end HTTP/1.1" browser
+2021/08/24 15:23:27.126 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=end HTTP/1.1" browser
+2021/08/24 15:23:27.131 +0800  INFO [LoginAbstractAzkabanServlet] [1053349376@qtp-71016405-11] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=end HTTP/1.1" browser
+2021/08/24 15:23:27.131 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=end HTTP/1.1" browser
+2021/08/24 15:23:27.131 +0800  WARN [FlowTriggerScheduler] [83288620@qtp-71016405-10] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 15:23:32.623 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /manager project=yc_test&flow=end&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 15:23:33.990 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /executor project=yc_test&ajax=fetchscheduledflowgraph&flow=end HTTP/1.1" browser
+2021/08/24 15:23:33.995 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /executor project=yc_test&ajax=flowInfo&flow=end HTTP/1.1" browser
+2021/08/24 15:23:35.431 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "POST /executor - HTTP/1.1" browser
+2021/08/24 15:23:35.431 +0800  INFO [ExecutorManager] [83288620@qtp-71016405-10] [Azkaban] Submitting execution flow end by admin
+2021/08/24 15:23:35.448 +0800  INFO [ExecutionFlowDao] [83288620@qtp-71016405-10] [Azkaban] Flow given end given id 2
+2021/08/24 15:23:35.464 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Successfully refreshed executor: KYE-1000850096.ky-tech.com.cn:51520 (id: 9), active=true with executor info : ExecutorInfo{remainingMemoryPercent=0.0, remainingMemoryInMB=0, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=0.0}
+2021/08/24 15:23:35.464 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :2
+2021/08/24 15:23:35.465 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 2 with error count 0
+2021/08/24 15:23:35.465 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :2
+2021/08/24 15:23:35.465 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 2 with error count 0
+2021/08/24 15:23:41.992 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /executor execid=2 HTTP/1.1" browser
+2021/08/24 15:23:41.993 +0800  INFO [StdOutErrRedirect] [83288620@qtp-71016405-10] [Azkaban] ----------version-------------------null
+2021/08/24 15:23:42.041 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /executor execid=2&ajax=fetchExecFlowLogs&offset=0&length=50000 HTTP/1.1" browser
+2021/08/24 15:23:42.054 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /flowtriggerinstance execid=2&ajax=fetchTriggerStatus HTTP/1.1" browser
+2021/08/24 15:23:42.054 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /executor execid=2&ajax=fetchexecflow HTTP/1.1" browser
+2021/08/24 15:23:42.055 +0800  INFO [ExecutorServlet] [83288620@qtp-71016405-10] [Azkaban] Fetching 2
+2021/08/24 15:23:42.073 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /executor execid=2&ajax=fetchexecflowupdate&lastUpdateTime=-1 HTTP/1.1" browser
+2021/08/24 15:23:42.073 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /executor execid=2&ajax=fetchExecFlowLogs&offset=0&length=50000 HTTP/1.1" browser
+2021/08/24 15:23:42.075 +0800  INFO [ExecutorServlet] [83288620@qtp-71016405-10] [Azkaban] Fetching 2
+2021/08/24 15:23:46.640 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /manager project=yc_test&flow=end HTTP/1.1" browser
+2021/08/24 15:23:46.640 +0800  INFO [StdOutErrRedirect] [710285242@qtp-71016405-9] [Azkaban] ----------version-------------------null
+2021/08/24 15:23:46.703 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=end HTTP/1.1" browser
+2021/08/24 15:23:46.703 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=end HTTP/1.1" browser
+2021/08/24 15:23:46.703 +0800  INFO [LoginAbstractAzkabanServlet] [1053349376@qtp-71016405-11] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=end HTTP/1.1" browser
+2021/08/24 15:23:46.703 +0800  WARN [FlowTriggerScheduler] [1053349376@qtp-71016405-11] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 15:23:46.705 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=end HTTP/1.1" browser
+2021/08/24 15:23:47.742 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /manager project=yc_test&flow=end&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 15:24:18.583 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /manager project=yc_test&flow=end HTTP/1.1" browser
+2021/08/24 15:24:18.583 +0800  INFO [StdOutErrRedirect] [710285242@qtp-71016405-9] [Azkaban] ----------version-------------------null
+2021/08/24 15:24:18.637 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=end HTTP/1.1" browser
+2021/08/24 15:24:18.637 +0800  INFO [LoginAbstractAzkabanServlet] [1053349376@qtp-71016405-11] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=end HTTP/1.1" browser
+2021/08/24 15:24:18.638 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=end HTTP/1.1" browser
+2021/08/24 15:24:18.638 +0800  WARN [FlowTriggerScheduler] [83288620@qtp-71016405-10] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 15:24:18.643 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=end HTTP/1.1" browser
+2021/08/24 15:24:18.668 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /manager project=yc_test&flow=end&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 15:24:19.246 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /manager project=yc_test&flow=end HTTP/1.1" browser
+2021/08/24 15:24:19.246 +0800  INFO [StdOutErrRedirect] [83288620@qtp-71016405-10] [Azkaban] ----------version-------------------null
+2021/08/24 15:24:19.297 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=end HTTP/1.1" browser
+2021/08/24 15:24:19.297 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=end HTTP/1.1" browser
+2021/08/24 15:24:19.297 +0800  INFO [LoginAbstractAzkabanServlet] [1053349376@qtp-71016405-11] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=end HTTP/1.1" browser
+2021/08/24 15:24:19.297 +0800  WARN [FlowTriggerScheduler] [1053349376@qtp-71016405-11] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 15:24:19.300 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=end HTTP/1.1" browser
+2021/08/24 15:24:19.316 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /manager project=yc_test&flow=end&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 15:24:19.431 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /manager project=yc_test&flow=end HTTP/1.1" browser
+2021/08/24 15:24:19.431 +0800  INFO [StdOutErrRedirect] [83288620@qtp-71016405-10] [Azkaban] ----------version-------------------null
+2021/08/24 15:24:19.481 +0800  INFO [LoginAbstractAzkabanServlet] [1053349376@qtp-71016405-11] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=end HTTP/1.1" browser
+2021/08/24 15:24:19.481 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=end HTTP/1.1" browser
+2021/08/24 15:24:19.481 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=end HTTP/1.1" browser
+2021/08/24 15:24:19.481 +0800  WARN [FlowTriggerScheduler] [710285242@qtp-71016405-9] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 15:24:19.484 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=end HTTP/1.1" browser
+2021/08/24 15:24:19.501 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /manager project=yc_test&flow=end&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 15:24:25.471 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Successfully refreshed executor: KYE-1000850096.ky-tech.com.cn:51520 (id: 9), active=true with executor info : ExecutorInfo{remainingMemoryPercent=0.0, remainingMemoryInMB=0, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=0.0}
+2021/08/24 15:24:25.471 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :2
+2021/08/24 15:24:25.471 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 2 with error count 0
+2021/08/24 15:24:25.471 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :2
+2021/08/24 15:24:25.471 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 2 with error count 0
+2021/08/24 15:25:15.471 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Successfully refreshed executor: KYE-1000850096.ky-tech.com.cn:51520 (id: 9), active=true with executor info : ExecutorInfo{remainingMemoryPercent=0.0, remainingMemoryInMB=0, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=0.0}
+2021/08/24 15:25:15.471 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :2
+2021/08/24 15:25:15.471 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 2 with error count 0
+2021/08/24 15:25:15.471 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :2
+2021/08/24 15:25:15.472 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 2 with error count 0
+2021/08/24 15:26:05.472 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Successfully refreshed executor: KYE-1000850096.ky-tech.com.cn:51520 (id: 9), active=true with executor info : ExecutorInfo{remainingMemoryPercent=0.0, remainingMemoryInMB=0, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=0.0}
+2021/08/24 15:26:05.472 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :2
+2021/08/24 15:26:05.472 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 2 with error count 0
+2021/08/24 15:26:05.472 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :2
+2021/08/24 15:26:05.472 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 2 with error count 0
+2021/08/24 15:26:21.271 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /manager project=yc_test HTTP/1.1" browser
+2021/08/24 15:26:21.271 +0800  INFO [StdOutErrRedirect] [83288620@qtp-71016405-10] [Azkaban] ----------version-------------------null
+2021/08/24 15:26:24.162 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /executor project=yc_test&ajax=fetchscheduledflowgraph&flow=end HTTP/1.1" browser
+2021/08/24 15:26:24.167 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /executor project=yc_test&ajax=flowInfo&flow=end HTTP/1.1" browser
+2021/08/24 15:26:55.474 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Successfully refreshed executor: KYE-1000850096.ky-tech.com.cn:51520 (id: 9), active=true with executor info : ExecutorInfo{remainingMemoryPercent=0.0, remainingMemoryInMB=0, remainingFlowCapacity=30, numberOfAssignedFlows=0, lastDispatchedTime=0, cpuUsage=0.0}
+2021/08/24 15:26:55.474 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :2
+2021/08/24 15:26:55.475 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 2 with error count 0
+2021/08/24 15:26:55.475 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Using dispatcher for execution id :2
+2021/08/24 15:26:55.475 +0800  INFO [ExecutorManager] [AzkabanWebServer-QueueProcessor-Thread] [Azkaban] Reached handleNoExecutorSelectedCase stage for exec 2 with error count 0
+2021/08/24 15:27:06.767 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /manager project=yc_test&permissions HTTP/1.1" browser
+2021/08/24 15:27:06.767 +0800  INFO [StdOutErrRedirect] [83288620@qtp-71016405-10] [Azkaban] ----------version-------------------null
+2021/08/24 15:27:08.985 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /manager project=yc_test&logs HTTP/1.1" browser
+2021/08/24 15:27:08.985 +0800  INFO [StdOutErrRedirect] [83288620@qtp-71016405-10] [Azkaban] ----------version-------------------null
+2021/08/24 15:27:09.009 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchProjectLogs&size=1000&skip=0 HTTP/1.1" browser
+2021/08/24 15:27:13.480 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /manager project=yc_test HTTP/1.1" browser
+2021/08/24 15:27:13.480 +0800  INFO [StdOutErrRedirect] [83288620@qtp-71016405-10] [Azkaban] ----------version-------------------null
+2021/08/24 15:27:15.304 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /manager project=yc_test&flow=end HTTP/1.1" browser
+2021/08/24 15:27:15.304 +0800  INFO [StdOutErrRedirect] [83288620@qtp-71016405-10] [Azkaban] ----------version-------------------null
+2021/08/24 15:27:15.353 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=end HTTP/1.1" browser
+2021/08/24 15:27:15.353 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=end HTTP/1.1" browser
+2021/08/24 15:27:15.353 +0800  INFO [LoginAbstractAzkabanServlet] [1053349376@qtp-71016405-11] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=end HTTP/1.1" browser
+2021/08/24 15:27:15.353 +0800  WARN [FlowTriggerScheduler] [1053349376@qtp-71016405-11] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 15:27:15.361 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=end HTTP/1.1" browser
+2021/08/24 15:27:16.894 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /flowtriggerinstance project=yc_test&flow=end&ajax=fetchTriggerInstances&start=0&length=16 HTTP/1.1" browser
+2021/08/24 15:27:17.262 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /manager project=yc_test&flow=end&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 15:27:21.199 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /executor execid=2 HTTP/1.1" browser
+2021/08/24 15:27:21.199 +0800  INFO [StdOutErrRedirect] [83288620@qtp-71016405-10] [Azkaban] ----------version-------------------null
+2021/08/24 15:27:21.243 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /executor execid=2&ajax=fetchExecFlowLogs&offset=0&length=50000 HTTP/1.1" browser
+2021/08/24 15:27:21.249 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /executor execid=2&ajax=fetchexecflow HTTP/1.1" browser
+2021/08/24 15:27:21.249 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /flowtriggerinstance execid=2&ajax=fetchTriggerStatus HTTP/1.1" browser
+2021/08/24 15:27:21.251 +0800  INFO [ExecutorServlet] [83288620@qtp-71016405-10] [Azkaban] Fetching 2
+2021/08/24 15:27:21.275 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /executor execid=2&ajax=fetchexecflowupdate&lastUpdateTime=-1 HTTP/1.1" browser
+2021/08/24 15:27:21.275 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /executor execid=2&ajax=fetchExecFlowLogs&offset=0&length=50000 HTTP/1.1" browser
+2021/08/24 15:27:21.277 +0800  INFO [ExecutorServlet] [83288620@qtp-71016405-10] [Azkaban] Fetching 2
+2021/08/24 15:27:22.448 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "POST /executor - HTTP/1.1" browser
+2021/08/24 15:27:23.578 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /executor execid=2&ajax=fetchexecflowupdate&lastUpdateTime=-1 HTTP/1.1" browser
+2021/08/24 15:27:23.579 +0800  INFO [ExecutorServlet] [710285242@qtp-71016405-9] [Azkaban] Fetching 2
+2021/08/24 15:27:27.016 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /manager project=yc_test HTTP/1.1" browser
+2021/08/24 15:27:27.016 +0800  INFO [StdOutErrRedirect] [710285242@qtp-71016405-9] [Azkaban] ----------version-------------------null
+2021/08/24 15:27:28.672 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /manager project=yc_test&flow=end HTTP/1.1" browser
+2021/08/24 15:27:28.672 +0800  INFO [StdOutErrRedirect] [710285242@qtp-71016405-9] [Azkaban] ----------version-------------------null
+2021/08/24 15:27:28.728 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /manager ajax=fetchflowdetails&project=yc_test&flow=end HTTP/1.1" browser
+2021/08/24 15:27:28.728 +0800  INFO [LoginAbstractAzkabanServlet] [83288620@qtp-71016405-10] [Azkaban] 0 admin "GET /schedule ajax=fetchSchedule&projectId=1&flowId=end HTTP/1.1" browser
+2021/08/24 15:27:28.728 +0800  INFO [LoginAbstractAzkabanServlet] [1053349376@qtp-71016405-11] [Azkaban] 0 admin "GET /flowtrigger ajax=fetchTrigger&projectId=1&flowId=end HTTP/1.1" browser
+2021/08/24 15:27:28.728 +0800  WARN [FlowTriggerScheduler] [1053349376@qtp-71016405-11] [Azkaban] Unable to get scheduled flow triggers - Quartz scheduler has not been initialized
+2021/08/24 15:27:28.730 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /manager project=yc_test&ajax=fetchflowgraph&flow=end HTTP/1.1" browser
+2021/08/24 15:27:29.870 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /manager project=yc_test&flow=end&ajax=fetchFlowExecutions&start=0&length=16 HTTP/1.1" browser
+2021/08/24 15:27:30.238 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /flowtriggerinstance project=yc_test&flow=end&ajax=fetchTriggerInstances&start=0&length=16 HTTP/1.1" browser
+2021/08/24 15:27:35.887 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /executor execid=2 HTTP/1.1" browser
+2021/08/24 15:27:35.887 +0800  INFO [StdOutErrRedirect] [710285242@qtp-71016405-9] [Azkaban] ----------version-------------------null
+2021/08/24 15:27:35.933 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /executor execid=2&ajax=fetchExecFlowLogs&offset=0&length=50000 HTTP/1.1" browser
+2021/08/24 15:27:35.940 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /executor execid=2&ajax=fetchexecflow HTTP/1.1" browser
+2021/08/24 15:27:35.941 +0800  INFO [LoginAbstractAzkabanServlet] [1053349376@qtp-71016405-11] [Azkaban] 0 admin "GET /flowtriggerinstance execid=2&ajax=fetchTriggerStatus HTTP/1.1" browser
+2021/08/24 15:27:35.942 +0800  INFO [ExecutorServlet] [710285242@qtp-71016405-9] [Azkaban] Fetching 2
+2021/08/24 15:27:35.968 +0800  INFO [LoginAbstractAzkabanServlet] [710285242@qtp-71016405-9] [Azkaban] 0 admin "GET /executor execid=2&ajax=fetchExecFlowLogs&offset=0&length=50000 HTTP/1.1" browser

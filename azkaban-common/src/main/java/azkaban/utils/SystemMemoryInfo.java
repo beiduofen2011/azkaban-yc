@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 public class SystemMemoryInfo {
 
   private static final org.slf4j.Logger logger = LoggerFactory.getLogger(SystemMemoryInfo.class);
-  private static final long LOW_MEM_THRESHOLD = 3L * 1024L * 1024L; //3 GB
+  private static final long LOW_MEM_THRESHOLD = 1L * 1024L * 1024L; //1 GB
   private final OsMemoryUtil util;
 
   @Inject
