@@ -623,6 +623,7 @@ public class JobRunner extends EventHandler implements Runnable {
 
     try {
       final File file = new File(this.attachmentFileName);
+      logger.info("---------------this.attachmentFileName--------------"+this.attachmentFileName);
       if (!file.exists()) {
         this.flowLogger.info("No attachment file for job " + this.jobId
             + " written.");

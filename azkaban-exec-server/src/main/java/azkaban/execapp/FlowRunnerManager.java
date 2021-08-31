@@ -540,6 +540,7 @@ public class FlowRunnerManager implements EventListener<Event>,
 
   private void submitFlowRunner(final FlowRunner runner) throws ExecutorManagerException {
     this.runningFlows.put(runner.getExecutionId(), runner);
+    LOGGER.info("----------runningFlows------put---------- " + JSONUtils.toJSON(runningFlows));
     try {
       // The executorService already has a queue.
       // The submit method below actually returns an instance of FutureTask,
@@ -552,6 +553,7 @@ public class FlowRunnerManager implements EventListener<Event>,
       this.lastFlowSubmittedDate = System.currentTimeMillis();
     } catch (final RejectedExecutionException re) {
       this.runningFlows.remove(runner.getExecutionId());
+      LOGGER.info("----------runningFlows------remove-----1----- " + JSONUtils.toJSON(runningFlows));
       final StringBuffer errorMsg = new StringBuffer(
           "Azkaban executor can't execute any more flows. ");
       if (this.executorService.isShutdown()) {
@@ -691,6 +693,7 @@ public class FlowRunnerManager implements EventListener<Event>,
         LOGGER.info("Flow " + flow.getExecutionId()
             + " is finished. Adding it to recently finished flows list.");
         this.runningFlows.remove(flow.getExecutionId());
+        LOGGER.info("----------runningFlows------remove-----2----- " + JSONUtils.toJSON(runningFlows));
         this.deleteExecutionDir(flow.getExecutionId());
       } else if (event.getType() == EventType.FLOW_STARTED) {
         // add flow level SLA checker
@@ -703,6 +706,7 @@ public class FlowRunnerManager implements EventListener<Event>,
 
   public LogData readFlowLogs(final int execId, final int startByte, final int length)
       throws ExecutorManagerException {
+    LOGGER.info("----------runningFlows-------get--------- " + JSONUtils.toJSON(runningFlows));
     final FlowRunner runner = this.runningFlows.get(execId);
     if (runner == null) {
       throw new ExecutorManagerException("Running flow " + execId
